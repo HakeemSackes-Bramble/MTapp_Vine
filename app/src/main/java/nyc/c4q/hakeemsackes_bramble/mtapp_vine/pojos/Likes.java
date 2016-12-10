@@ -10,8 +10,8 @@ public class Likes {
 
     public int count;
     public String anchorStr;
-    public List<Record> records = null;
-    public Object previousPage;
+    public List<Record> records;
+    public Record previousPage;
     public String backAnchor;
     public int anchor;
     public int nextPage;
@@ -57,11 +57,11 @@ public class Likes {
         this.nextPage = nextPage;
     }
 
-    public Object getPreviousPage() {
+    public Record getPreviousPage() {
         return previousPage;
     }
 
-    public void setPreviousPage(Object previousPage) {
+    public void setPreviousPage(Record previousPage) {
         this.previousPage = previousPage;
     }
 

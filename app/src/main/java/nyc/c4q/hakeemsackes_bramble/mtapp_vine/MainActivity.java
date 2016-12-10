@@ -14,6 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         getVines();
     }
 
-    public void getVines() { // its a
+    public static void getVines() { // its a
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://www.vine.co/")
@@ -33,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<VineData> call, Response<VineData> response) {
                 VineData data = response.body();
+
                 System.out.println("it worked");
-                Log.d("", "onResponse: post data " );
+                Log.d("MainActivity", "onResponse: post data " + data );
             }
 
             @Override

@@ -29,11 +29,11 @@ public class Repost {
         this.avatarUrl = avatarUrl;
     }
 
-    public String getCreated() {
+    public String getCreatedRepost() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreatedRepost(String created) {
         this.created = created;
     }
 

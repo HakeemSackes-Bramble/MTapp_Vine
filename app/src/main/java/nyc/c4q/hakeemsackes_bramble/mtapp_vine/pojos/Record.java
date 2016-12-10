@@ -12,6 +12,48 @@ public class Record {
 
     public int liked;
     public String videoDashUrl;
+    public String foursquareVenueId;
+    public int remixDisabled;
+    public int userId;
+    public int _private;
+    public Object videoWebmUrl;
+    public Loops loops;
+    public String thumbnailUrl;
+    public int explicitContent;
+    public Repost repost;
+    public int verified;
+    public String avatarUrl;
+    public Comments comments;
+    public List<Object> entities = null;
+    public String videoLowURL;
+    public List<String> vanityUrls = null;
+    public int blocked;
+    public String username;
+    public String description;
+    public List<Object> tags = null;
+    public String permalinkUrl;
+    public int promoted;
+    public int postId;
+    public String profileBackground;
+    public String videoUrl;
+    public int followRequested;
+    public String created;
+    public int hasSimilarPosts;
+    public String shareUrl;
+    public int myRepostId;
+    public int following;
+    public Reposts reposts;
+    public Likes likes;
+    public int hasRemixes;
+    public String venueCategoryId;
+    public String venueName;
+    public String venueCategoryShortName;
+    public String venueCity;
+    public String venueCountryCode;
+    public String venueState;
+    public String venueAddress;
+    public String venueCategoryIconUrl;
+    public List<AudioTrack> audioTracks;
 
     public List<AudioTrack> getAudioTracks() {
         return audioTracks;
@@ -21,8 +63,6 @@ public class Record {
         this.audioTracks = audioTracks;
     }
 
-    public String foursquareVenueId;
-    public int remixDisabled;
 
     public int getBlocked() {
         return blocked;
@@ -40,11 +80,11 @@ public class Record {
         this.comments = comments;
     }
 
-    public String getCreated() {
+    public String getCreatedRecord() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreatedRecord(String created) {
         this.created = created;
     }
 
@@ -369,46 +409,7 @@ public class Record {
         this.avatarUrl = avatarUrl;
     }
 
-    public int userId;
-    public int _private;
-    public Object videoWebmUrl;
-    public Loops loops;
-    public String thumbnailUrl;
-    public int explicitContent;
-    public Repost repost;
-    public int verified;
-    public String avatarUrl;
-    public Comments comments;
-    public List<Object> entities = null;
-    public String videoLowURL;
-    public List<String> vanityUrls = null;
-    public int blocked;
-    public String username;
-    public String description;
-    public List<Object> tags = null;
-    public String permalinkUrl;
-    public int promoted;
-    public int postId;
-    public String profileBackground;
-    public String videoUrl;
-    public int followRequested;
-    public String created;
-    public int hasSimilarPosts;
-    public String shareUrl;
-    public int myRepostId;
-    public int following;
-    public Reposts reposts;
-    public Likes likes;
-    public int hasRemixes;
-    public String venueCategoryId;
-    public String venueName;
-    public String venueCategoryShortName;
-    public String venueCity;
-    public String venueCountryCode;
-    public String venueState;
-    public String venueAddress;
-    public String venueCategoryIconUrl;
-    public List<AudioTrack> audioTracks = null;
+
 
 }
 

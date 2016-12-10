@@ -8,9 +8,9 @@ public class AudioTrack {
 
     public String origin;
     public String created;
-    public Object deleted;
+    public Record deleted;
     public int trackId;
-    public Object modified;
+    public Record modified;
 
     public int getNumberOfMeasures() {
         return numberOfMeasures;
@@ -36,19 +36,19 @@ public class AudioTrack {
         this.averageBpm = averageBpm;
     }
 
-    public String getCreated() {
+    public String getCreatedQAudio() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreatedAudio(String created) {
         this.created = created;
     }
 
-    public Object getDeleted() {
+    public Record getDeleted() {
         return deleted;
     }
 
-    public void setDeleted(Object deleted) {
+    public void setDeleted(Record deleted) {
         this.deleted = deleted;
     }
 
@@ -68,11 +68,11 @@ public class AudioTrack {
         this.linkId = linkId;
     }
 
-    public Object getModified() {
+    public Record getModified() {
         return modified;
     }
 
-    public void setModified(Object modified) {
+    public void setModified(Record modified) {
         this.modified = modified;
     }
 

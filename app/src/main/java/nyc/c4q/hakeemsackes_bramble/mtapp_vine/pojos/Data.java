@@ -10,11 +10,12 @@ public class Data {
 
     public int count;
     public String anchorStr;
-    public List<Record> records = null;
-    public Object previousPage;
+    public List<Record> records;
+    public Record previousPage;
     public String backAnchor;
     public int anchor;
     public int nextPage;
+    public int size;
 
     public int getSize() {
         return size;
@@ -32,11 +33,11 @@ public class Data {
         this.records = records;
     }
 
-    public Object getPreviousPage() {
+    public Record getPreviousPage() {
         return previousPage;
     }
 
-    public void setPreviousPage(Object previousPage) {
+    public void setPreviousPage(Record previousPage) {
         this.previousPage = previousPage;
     }
 
@@ -80,6 +81,6 @@ public class Data {
         this.anchor = anchor;
     }
 
-    public int size;
+
 
 }

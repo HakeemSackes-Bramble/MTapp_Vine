@@ -10,15 +10,15 @@ public class Comments {
 
     public int count;
     public String anchorStr;
-    public List<Object> records = null;
-    public Object previousPage;
+    public List<Record> records = null;
+    public Record previousPage;
     public String backAnchor;
 
-    public Object getAnchor() {
+    public Record getAnchor() {
         return anchor;
     }
 
-    public void setAnchor(Object anchor) {
+    public void setAnchor(Record anchor) {
         this.anchor = anchor;
     }
 
@@ -38,11 +38,11 @@ public class Comments {
         this.backAnchor = backAnchor;
     }
 
-    public Object getNextPage() {
+    public Record getNextPage() {
         return nextPage;
     }
 
-    public void setNextPage(Object nextPage) {
+    public void setNextPage(Record nextPage) {
         this.nextPage = nextPage;
     }
 
@@ -54,19 +54,19 @@ public class Comments {
         this.count = count;
     }
 
-    public Object getPreviousPage() {
+    public Record getPreviousPage() {
         return previousPage;
     }
 
-    public void setPreviousPage(Object previousPage) {
+    public void setPreviousPage(Record previousPage) {
         this.previousPage = previousPage;
     }
 
-    public List<Object> getRecords() {
+    public List<Record> getRecords() {
         return records;
     }
 
-    public void setRecords(List<Object> records) {
+    public void setRecords(List<Record> records) {
         this.records = records;
     }
 
@@ -78,8 +78,8 @@ public class Comments {
         this.size = size;
     }
 
-    public Object anchor;
-    public Object nextPage;
+    public Record anchor;
+    public Record nextPage;
     public int size;
 
 }
