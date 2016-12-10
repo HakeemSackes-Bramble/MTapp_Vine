@@ -11,6 +11,7 @@ import android.view.ViewGroup;
  */
 
 public class VineAdapter extends RecyclerView.Adapter<VineHolder>{
+
     @Override
     public VineHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
