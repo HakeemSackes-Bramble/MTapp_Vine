@@ -16,7 +16,6 @@ public class Record {
     public int remixDisabled;
     public int userId;
     public int _private;
-    public Object videoWebmUrl;
     public Loops loops;
     public String thumbnailUrl;
     public int explicitContent;
@@ -24,13 +23,11 @@ public class Record {
     public int verified;
     public String avatarUrl;
     public Comments comments;
-    public List<Object> entities = null;
     public String videoLowURL;
     public List<String> vanityUrls = null;
     public int blocked;
     public String username;
     public String description;
-    public List<Object> tags = null;
     public String permalinkUrl;
     public int promoted;
     public int postId;
@@ -94,14 +91,6 @@ public class Record {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public List<Object> getEntities() {
-        return entities;
-    }
-
-    public void setEntities(List<Object> entities) {
-        this.entities = entities;
     }
 
     public int getExplicitContent() {
@@ -248,14 +237,6 @@ public class Record {
         this.shareUrl = shareUrl;
     }
 
-    public List<Object> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<Object> tags) {
-        this.tags = tags;
-    }
-
     public String getThumbnailUrl() {
         return thumbnailUrl;
     }
@@ -374,14 +355,6 @@ public class Record {
 
     public void setVideoUrl(String videoUrl) {
         this.videoUrl = videoUrl;
-    }
-
-    public Object getVideoWebmUrl() {
-        return videoWebmUrl;
-    }
-
-    public void setVideoWebmUrl(Object videoWebmUrl) {
-        this.videoWebmUrl = videoWebmUrl;
     }
 
     public int getUserId() {
