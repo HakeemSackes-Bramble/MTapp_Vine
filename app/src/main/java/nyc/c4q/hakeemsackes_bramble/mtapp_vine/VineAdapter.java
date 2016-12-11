@@ -6,11 +6,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
+import nyc.c4q.hakeemsackes_bramble.mtapp_vine.pojos.Record;
+
 /**
  * Created by hakeemsackes-bramble on 12/10/16.
  */
 
 public class VineAdapter extends RecyclerView.Adapter<VineHolder>{
+
+
+    private ArrayList<Record> records;
 
     @Override
     public VineHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -23,11 +30,11 @@ public class VineAdapter extends RecyclerView.Adapter<VineHolder>{
 
     @Override
     public void onBindViewHolder(VineHolder holder, int position) {
-        holder.nameTextView.setText(userName.getTitle());
+        holder.nameTextView.setText(records.get(position).getUsername());
     }
 
     @Override
     public int getItemCount() {
-        return username.size();
+        return records.size();
     }
 }
